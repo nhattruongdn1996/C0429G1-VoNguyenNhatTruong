@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a669b138-1c8d-4327-bbc2-8d2b3000ecd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SuDungTheHtmlCoBan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tạo danh sách.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,7 @@
       <updated>1587961320380</updated>
       <workItem from="1587961322093" duration="444000" />
       <workItem from="1587961787561" duration="221000" />
-      <workItem from="1588154078664" duration="164000" />
+      <workItem from="1588154078664" duration="1268000" />
     </task>
     <servers />
   </component>
