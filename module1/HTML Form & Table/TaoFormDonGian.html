@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form Đơn giản</title>
+    <style>
+        p {
+            color: blue;
+        }
+
+        label {
+            color: coral;
+        }
+        .back {
+            background: burlywood;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h1 style="background: red;color: white; text-align: center">SỞ THÍCH CỦA BẠN</h1>
+    <p>Họ và Tên: <input type="text" name="yourname" placeholder="please input yourname"></p>
+    <p>Email: <input type="text" name="youremail" placeholder="please input youremail"></p>
+    <p>Sở thích:</p>
+    <label><input type="checkbox" name="hobby" value="thethao">Thể thao</label> &nbsp;
+    <label><input type="checkbox" name="hobby" value="amnhac">Âm nhạc</label>
+    <label><input type="checkbox" name="hobby" value="docsach">Đọc Sách</label><br>
+    <label><input type="checkbox" name="hobby" value="luotweb">Lướt web</label>
+    <label><input type="checkbox" name="hobby" value="choigame">Chơi game</label>
+    <label><input type="checkbox" name="hobby" value="dienanh">Điện ảnh</label><br>
+    <label><input type="checkbox" name="hobby" value="dulich">Du lịch</label><br>
+    <br>
+    <input type="button" value="Gửi Thông Tin" name="guithongtin">
+    <input type="button" value="Nhập Lại" name="nhaplai">
+</form>
+
+<form class="back">
+    <h1 style="background: aqua;color:blue">ĐĂNG KÝ HỌC VIÊN</h1>
+    <p>Họ và Tên: <input type="text" name="yourname" placeholder="please input yourname"></p>
+    <p>Ngày sinh: <input type="text" name="birthday" placeholder="please input yourbirthday"></p>
+    <p>Giới tính:</p>
+    <input type="radio" name="sex" value="mal">Nam
+    <input type="radio" name="sex" value="femal">Nu
+    <p>Địa chỉ: </p> <textarea type="text" name="diachi"  row="4" cols="30"></textarea>
+    <p>Lớp: <select name="class">
+        <option value="c01">C01</option>
+        <option value="c02">C02</option>
+    </select></p>
+    <p>Email:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="youremail" placeholder="please input youremail"></p>
+    <p>Điện Thoại: <input type="text" name="yourphonenumber"></p>
+    <input type="button" value="Đăng Ký" name="dangky">
+    <input type="button" value="Nhập Lại" name="nhaplai">
+</form>
+</body>
+</html>
