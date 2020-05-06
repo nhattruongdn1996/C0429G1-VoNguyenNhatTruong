@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <script src="ChuyenDoiTienTe.js"></script>
+</head>
+<body>
+<form>
+    <div style="display: inline-block;">
+        <p style="margin: 10px;font-weight: bold;padding-left: 40px;">
+            Amount
+        </p>
+        <input id="amount" type="text" name="amount" placeholder="1">
+    </div>
+    <div style="display: inline-block;">
+        <p style="margin: 10px;font-weight: bold;padding-left: 40px;">From Currency</p>
+        <div style="padding-left: 50px">
+            <select id="vietnam">
+                <option>VietNam</option>
+                <option>Nhật Bản</option>
+            </select>
+        </div>
+    </div>
+    <div style="display: inline-block;">
+        <p style="margin: 10px;font-weight: bold;padding-left: 40px;">To Currency</p>
+        <div style="padding-left: 50px">
+            <select>
+                <option>USD</option>
+                <option>VNĐ</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div style="display: inline-block;">
+        <button style="background: blueviolet;color: white;" onclick="convert()" type="button">Convert</button>
+    </div>
+
+</form>
+<p id="demo"></p>
+</body>
+</html>
