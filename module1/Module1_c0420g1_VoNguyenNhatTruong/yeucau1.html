@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 1</title>
+</head>
+<body>  
+  <script>
+      let name;
+      let cmnd;
+      let birthday;
+      let address;
+      let typeService;
+      let typeRoom;
+      let typeCustomer;
+      let discount;
+      let quantityIncluded;
+      let renđDays;
+      let totalPay;
+
+      name = prompt("Input name: ");
+      cmnd = prompt("Input cmnd: ");
+      birthday = prompt("Input birthday: ");
+      address = prompt("Input address: ");
+      typeService = prompt("Input typeService: ");
+      typeRoom = prompt("Input typeRoom q: ");
+      typeCustomer = prompt("Input typeCustomer: ");
+      discount = prompt("Input discount: ");
+      quantityIncluded = prompt("Input quantityIncluded: ");
+      renđDays = prompt("Input renđDays: ");
+      totalPay = 300*renđDays*(1-discount/100);
+
+      alert("name: "+ name+
+          "\n" + "cmnd: " +cmnd+ "\n" +"totalpay: "+ totalPay
+      );
+  </script>
+</body>
+</html>

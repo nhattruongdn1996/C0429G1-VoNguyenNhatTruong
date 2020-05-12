@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 2</title>
+</head>
+<body>
+<script>
+    let name = "Trường";
+    let cmnd = "123";
+    let birthday = "01/01/2000";
+    let email = "abc@abc";
+    let address = "Đà Nẵng";
+    let typeService = "Villa";
+    let typeRoom = "Vip";
+    let typeCustomer = "Diamond";
+    let discount = 10;
+    let quantityIncluded = 10;
+    let renđDays = 7;
+    let totalPay = 300*renđDays*(1-discount/100);
+
+    let choose = parseInt(prompt("1.Hiển thị thông tin khách hàng" + "\n" +
+        "2.Chỉnh sửa thông tin khách hàng" + "\n" +
+        "3.Hiển thị giá sau khi được giảm giá"));
+    switch (choose) {
+        case 1: {
+            alert("Tên: " + name + "\n" +
+                "cmnd: " + cmnd + "\n" +
+                "birthday: " + birthday + "\n" +
+                "email: " + email + "\n" +
+                "address: " + address + "\n" +
+                "typeService: " + typeService + "\n" +
+                "typeRoom: " + typeRoom + "\n" +
+                "typeCustomer: " + typeCustomer + "\n" +
+                "discount: " + discount + "\n" +
+                "quantityIncluded : " + quantityIncluded + "\n" +
+                "renđDays: " + renđDays + "\n" );
+            break;
+        }
+        case 2: {
+            let chooseEdit = parseInt(prompt("1.Tên: " + name + "\n" +
+                "2.cmnd: " + cmnd + "\n" +
+                "3.birthday: " + birthday + "\n" +
+                "4.email: " + email + "\n" +
+                "5.address: " + address + "\n" +
+                "6.typeService: " + typeService + "\n" +
+                "7.typeRoom: " + typeRoom + "\n" +
+                "8.typeCustomer: " + typeCustomer + "\n" +
+                "9.discount: " + discount + "\n" +
+                "10.quantityIncluded : " + quantityIncluded + "\n" +
+                "11.renđDays: " + renđDays + "\n" ));
+            switch (chooseEdit) {
+                case 1: {
+                    name = prompt("Nhap name mới: ");
+                    break;
+                }
+                case 2: {
+                    cmnd = prompt("Nhap cmnd mới: ");
+                    break;
+                }
+                case 3: {
+                    birthday = prompt("Nhap birthday mới: ");
+                    break;
+                }
+                case 4: {
+                    address = prompt("Nhap address mới: ");
+                    break;
+                }
+                case 5: {
+                    typeService = prompt("Nhap typeServicemới: ");
+                    break;
+                }
+                case 6: {
+                    typeRoom = prompt("Nhap typeRoom mới: ");
+                    break;
+                }
+                case 7: {
+                    typeCustomer = prompt("Nhap typeCustomer mới: ");
+                    break;
+                }
+                case 8: {
+                    discount= prompt("Nhap discount mới: ");
+                    break;
+                }
+                case 9: {
+                    quantityIncluded = prompt("Nhap quantityIncluded mới: ");
+                    break;
+                }
+                case 10: {
+                    name = prompt("Nhap name mới: ");
+                    break;
+                }
+                case 11: {
+                    renđDays = prompt("Nhap renđDays mới: ");
+                    break;
+                }
+                default: {
+                    alert("Failed");
+                }
+            }
+            alert("Tên: " + name + "\n" +
+                "cmnd: " + cmnd + "\n" +
+                "birthday: " + birthday + "\n" +
+                "email: " + email + "\n" +
+                "address: " + address + "\n" +
+                "typeService: " + typeService + "\n" +
+                "typeRoom: " + typeRoom + "\n" +
+                "typeCustomer: " + typeCustomer + "\n" +
+                "discount: " + discount + "\n" +
+                "quantityIncluded : " + quantityIncluded + "\n" +
+                "renđDays: " + renđDays + "\n" );
+            break;
+        }
+        case 3: {
+            alert("name: "+ name+
+                "\n" + "cmnd: " +cmnd+ "\n" +"totalpay: "+ totalPay
+            );
+            break;
+        }
+           default: {
+            alert("Sự lựa chọn của bạn không có trong trình đơn");
+           }
+    }
+</script>
+</body>
+</html>
