@@ -17,7 +17,7 @@
     let discount = 10;
     let quantityIncluded = 10;
     let renđDays = 7;
-    let totalPay = 300*renđDays*(1-discount/100);
+    let totalPay;
 
     let choose = parseInt(prompt("1.Hiển thị thông tin khách hàng" + "\n" +
         "2.Chỉnh sửa thông tin khách hàng" + "\n" +
@@ -112,9 +112,52 @@
             break;
         }
         case 3: {
-            alert("name: "+ name+
-                "\n" + "cmnd: " +cmnd+ "\n" +"totalpay: "+ totalPay
-            );
+            let money = 0;
+            if(typeService ==="Villa"){
+                money = 500;
+            }
+            else if(typeService==="House"){
+                money=300;
+            }
+            else if(typeService==="Room"){
+                money=100;
+            }
+            let temp = 0;
+            if(address==="Đà Nẵng"){
+                temp += 20;
+            }
+            else if(address==="Huế"){
+                temp += 10;
+            }
+            else  if(address==="Quảng Nam"){
+                temp += 5;
+            }
+            if (renđDays>7){
+                temp +=30;
+            }
+            else if (renđDays>5){
+                temp +=20;
+            }
+            else if (renđDays>2){
+                temp +=10;
+            }
+            if (typeCustomer==="Diamond"){
+               temp +=15;
+            }
+            else if (typeCustomer==="Platium"){
+                temp +=10;
+            }
+            else if (typeCustomer==="Gold"){
+                temp +=5;
+            }
+            else if (typeCustomer==="Silver"){
+                temp +=2;
+            }
+            else if (typeCustomer==="Member"){
+                temp +=0;
+            }
+            console.log(temp);
+            alert("Total pay: "+(money*renđDays-temp));
             break;
         }
            default: {

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a669b138-1c8d-4327-bbc2-8d2b3000ecd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CauTrucLap1/DoYouLoveMe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1_c0420g1_VoNguyenNhatTruong/yeucau2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module1_c0420g1_VoNguyenNhatTruong/yeucau2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <workItem from="1589265766776" duration="10228000" />
       <workItem from="1589296292519" duration="455000" />
       <workItem from="1589334144677" duration="7718000" />
-      <workItem from="1589352581841" duration="1616000" />
+      <workItem from="1589352581841" duration="3417000" />
     </task>
     <servers />
   </component>
