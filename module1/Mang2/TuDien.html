@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<form name="tudien">
+    <div style="display: inline-block">
+        <p style="text-align: center">Eng</p>
+        <input type="text" name="tiengAnh" id="eng">
+    </div>
+    <div style="display: inline-block">
+        <p style="text-align: center">Việt</p>
+        <input type="text" name="tiengViet" id="vi">
+    </div>
+    <div style="display: inline-block">
+        <input type="button" name="btn" onclick="subMit()" value="Dịch">
+    </div>
+</form>
+<script>
+    function subMit() {
+        let a = ["car", "book", "pen", "home", "sun", "moon"];
+        let b = ["xe hơi", "sách", "bút", "nhà", "mặt trời", "mặt trăng"];
+        let index = a.indexOf(tudien.tiengAnh.value);
+        if (index !== -1) {
+            tudien.tiengViet.value = b[index];
+        } else {
+            alert("Bạn chưa nhập từ nào cả hoặc từ bạn nhập chưa có trong từ điển: ");
+        }
+    }
+</script>
+</body>
+</html>
