@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a669b138-1c8d-4327-bbc2-8d2b3000ecd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Mang2/TuDien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ham1/TaoVaGoiHam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mang2/TicTacToe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +75,9 @@
       <workItem from="1589265766776" duration="10228000" />
       <workItem from="1589296292519" duration="455000" />
       <workItem from="1589334144677" duration="7718000" />
-      <workItem from="1589352581841" duration="9725000" />
+      <workItem from="1589352581841" duration="11820000" />
+      <workItem from="1589506537018" duration="1805000" />
+      <workItem from="1589526883234" duration="3777000" />
     </task>
     <servers />
   </component>
@@ -90,6 +93,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589265978827" />
+    <state x="414" y="33" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589528916395">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="414" y="33" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1589528916395" />
     <state x="297" y="153" key="run.anything.popup" timestamp="1589339657617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

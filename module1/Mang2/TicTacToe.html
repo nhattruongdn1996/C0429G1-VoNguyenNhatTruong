@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+<div style="border: 1px solid black; border-collapse: collapse; width: 50%">
+    <p id="demo1" style="display: inline-block; width: 32%" onclick="wrtx()"></p>
+    <p id="demo2" style="display: inline-block; width: 32%"></p>
+    <p id="demo3" style="display: inline-block; width: 32%"></p>
+</div>
+<div style="border: 1px solid black; border-collapse: collapse; width: 50%">
+    <p id="demo4" style="display: inline-block; width: 32%"></p>
+    <p id="demo5" style="display: inline-block; width: 32%"></p>
+    <p id="demo6" style="display: inline-block; width: 32%"></p>
+</div>
+<div style="border: 1px solid black; border-collapse: collapse; width: 50%">
+    <p id="demo7" style="display: inline-block; width: 32%"></p>
+    <p id="demo8" style="display: inline-block; width: 32%"></p>
+    <p id="demo9" style="display: inline-block; width: 32%"></p>
+</div>
+<script>
+    let a = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]];
+    document.getElementById("demo1").innerHTML = a[0][0];
+    document.getElementById("demo2").innerHTML = a[0][1];
+    document.getElementById("demo3").innerHTML = a[0][2];
+    document.getElementById("demo4").innerHTML = a[1][0];
+    document.getElementById("demo5").innerHTML = a[1][1];
+    document.getElementById("demo6").innerHTML = a[1][2];
+    document.getElementById("demo7").innerHTML = a[2][0];
+    document.getElementById("demo8").innerHTML = a[2][1];
+    document.getElementById("demo9").innerHTML = a[2][2];
+    function wrtx() {
+        document.getElementById("demo1").innerHTML= "x";
+
+    }
+
+
+</script>
+</body>
+</html>
