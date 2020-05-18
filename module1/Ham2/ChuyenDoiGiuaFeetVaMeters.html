@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHuyển đối giữa feet và metters</title>
+</head>
+<body>
+<input type="text" id="feet" value="0" placeholder="Nhập số cần chuyển qua meters">
+<input type="button" value="In kết quả" onclick="feetToMeters()">
+<p id="demo1"></p>
+<input type="text" id="meters" value="0" placeholder="Nhập số cần chuyển qua feet">
+<input type="button" value="In kết quả" onclick=" metersToFeet()">
+<p id="demo2"></p>
+<script>
+    function feetToMeters() {
+        let meters = document.getElementById("feet").value;
+        meters = parseFloat(meters);
+        let number1 = meters * 0.305;
+        let html1 = "Kết quả chuyển từ feet sang meters là: " + number1;
+        document.getElementById("demo1").innerHTML = html1;
+    }
+    function metersToFeet() {
+        let feet = document.getElementById("meters").value;
+        feet = parseFloat(feet);
+        let number2 = feet * 3.279;
+        let html2 = "Kết quả chuyển từ meters sang feet là: " + number2;
+        document.getElementById("demo2").innerHTML = html2;
+    }
+</script>
+</body>
+</html>
