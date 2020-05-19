@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập sử dụng hàm 1</title>
+</head>
+<body>
+<input id="demo1" type="button" onclick="alertMessage()" value="Bai1">
+<input type="button" onclick="addNumbers()" value="Bai2">
+<p id="demo2"></p>
+
+<p id="demo3"></p>
+
+</body>
+<script>
+    function alertMessage() {
+        alert("Xin Chao")
+    }
+
+    function addNumbers() {
+        let number = 10;
+        number += 1;
+        result = " " + number;
+        document.getElementById("demo2").innerHTML = result;
+    }
+
+    let a = parseInt(prompt("nhập số thứ nhất"))
+    let b = parseInt(prompt("nhập số thứ hai"))
+
+    function soSanhHaiSo(x, y) {
+        if (x > y) {
+            alert("Số thứ 1 lớn hơn số thứ 2")
+        } else {
+            let z = x + y;
+            document.getElementById("demo3").innerHTML = z;
+        }
+    }
+    soSanhHaiSo(a,b);
+</script>
+</html>
