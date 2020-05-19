@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 3</title>
+</head>
+<body>
+<script>
+    let name;
+    let cmnd;
+    let birthday;
+    let email;
+    let address;
+    let typeService;
+    let typeRoom;
+    let typeCustomer;
+    let discount;
+    let quantityIncluded;
+    let renđDays;
+    let totalPay;
+    let check = false;
+    let tempName= "";
+
+    name = prompt("Input name: ");
+    name = name.trim().toLowerCase();
+    for(let i = 0;i< name.length;i++){
+        if(name.charAt(i)===" " && name.charAt(i + 1)===" "){
+            continue;
+        }
+        if(i===0 || name.charAt(i-1)===" "){
+            tempName+=name.charAt(i).toUpperCase();
+            continue;
+        }
+        tempName+=name.charAt(i);
+    }
+    alert(tempName);
+    do {
+        cmnd = prompt("Input cmnd: ");
+        if (!isNaN(cmnd)) {
+            cmnd = Number.parseFloat(cmnd);
+        }
+        if (!Number.isInteger(cmnd)) {
+            alert("CMND không đúng định dạng");
+            continue;
+        }
+        if (cmnd < 10000000 || cmnd > 99999999) {
+            alert("CMND không đúng định dạng");
+            continue;
+        }
+        check = true;
+    } while (!check)
+    check = false;
+
+    do {
+        birthday = prompt("Input birthday: ");
+        if (birthday.charAt(2) === "/" && birthday.charAt(5) === "/") {
+            let day = birthday.substring(0, 2);
+            let month = birthday.substring(3, 5);
+            let year = birthday.substring(6, 10);
+            if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
+                day = Number.parseFloat(day);
+                month = Number.parseFloat(month);
+                year = Number.parseFloat(year);
+                if (Number.isInteger(day) && Number.isInteger(month) && Number.isInteger(year)) {
+                    if (day < 32 && month < 13 && year > 1950) {
+                        check = true;
+                    }
+                }
+            }
+
+        }
+        if (!check){
+            alert("Ngày sinh không đúng định dạng")
+        }
+    }while (!check)
+    check=false
+        do {
+            let countAt = 0;
+            let coutDoc = 0;
+            email = prompt("Input Email: ")
+            for (let i = 0; i < email.length; i++) {
+                if (email.charAt(i) === "@") {
+                    countAt++;
+                    for (let j = i + 1; j < email.length; j++) {
+                        if (email.charAt(j) === ".") {
+                            coutDoc++;
+                        }
+                    }
+
+                }
+            }
+            if (countAt != 1 || coutDoc < 1) {
+                alert("Email bạn nhập không đúng")
+            } else {
+                check = true;
+            }
+        }
+    while (!check)
+        check = false;
+    address = prompt("Input address: ");
+    typeService = prompt("Input typeService: ");
+    typeRoom = prompt("Input typeRoom q: ");
+    typeCustomer = prompt("Input typeCustomer: ");
+    discount = prompt("Input discount: ");
+    quantityIncluded = prompt("Input quantityIncluded: ");
+    do {
+        renđDays = prompt("Input renđDays: ");
+        if(!isNaN(renđDays)){
+            renđDays=Number.parseFloat(renđDays);
+            if(Number.isInteger(renđDays)){
+                check=true;
+            }
+        }
+        if (!check){
+            alert("Rentdays không phải là số nguyên dương. ")
+        }
+    }
+    while (!check)
+    check=false;
+</script>
+</body>
+</html>
